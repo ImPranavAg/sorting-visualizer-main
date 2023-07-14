@@ -12,7 +12,7 @@ function SortingVisualizer() {
   // Generate Random Array When Component Mounts
   useEffect(() => {
     dispatch(generateRandomArr(numOfBars));
-  }, []);
+  }, [numOfBars, dispatch]);
 
   return (
     <div

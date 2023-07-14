@@ -11,7 +11,7 @@ function heap_root(input, i, array_length, arrInst) {
     max = right;
   }
 
-  if (max != i) {
+  if (max !== i) {
     swap(input, i, max, arrInst);
     heap_root(input, max, array_length, arrInst);
     arrInst.push({ array: [...input], g1: -1, g2: -1, r1: i, r2: max, y: -1 });
